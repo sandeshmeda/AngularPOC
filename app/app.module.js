@@ -5,7 +5,8 @@
                 "app.search",
                 "app.weather",
                 "app.forecast",
-                "app.component"
+                "app.component",
+                "app.services"
     ];
 
   angular.module(name, requires);
