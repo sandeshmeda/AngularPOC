@@ -1,6 +1,6 @@
-﻿(function() {
+﻿(function () {
 
-  angular.module('app.search').controller('Search', function($scope, weatherSvc) {
+  angular.module('app.search').controller('Search', function ($scope, weatherSvc) {
 
     $scope.cities = null;
 
@@ -9,11 +9,11 @@
     function search(evt, data) {
       console.log(data.str);
       weatherSvc.find(data.str)
-                .then(function(response) {
+                .then(function (response) {
                   console.log(response);
                   $scope.cities = response.list;
-          },
-                function(err) {
+                },
+                function (err) {
                   console.log('error finding cities: ', err);
                 });
     }
