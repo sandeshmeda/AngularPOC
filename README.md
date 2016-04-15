@@ -18,3 +18,8 @@ The application attempts to demonstrate the following concepts of AngularJS
 4. Routing
 
 # Screenshots
+Coming soon..
+
+# Setup Instructions
+
+You'll need to setup a free account with [OpenWeatherMap](http://openweathermap.org/) and use the AppID in the Request URLs.
