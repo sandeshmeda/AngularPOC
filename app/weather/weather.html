@@ -5,7 +5,7 @@
       <ul class="list-inline">
         <li><img ng-src="http://openweathermap.org/img/w/{{details.weather[0].icon}}.png"/></li>
         <li>
-          <h2>{{details.main.temp - 273.15 | number}} &#8451;</h2>
+          <h2>{{(((details.main.temp-273.15) * 9)/5) + 32 | number}} &deg;F</h2>
         </li>
       </ul>
       <h4>{{details.weather[0].main}}</h4>
